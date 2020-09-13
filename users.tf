@@ -52,3 +52,14 @@ output "prune_access_key_secret" {
   value = "${aws_iam_access_key.prune_user_key.secret}"
 }
 
+output "backup_policy_arn" {
+  value = "${aws_iam_policy.backup_policy.arn}"
+}
+
+output "restore_policy_arn" {
+  value = "${aws_iam_policy.restore_policy.arn}"
+}
+
+output "prune_policy_arn" {
+  value = "${aws_iam_policy.prune_policy.arn}"
+}
